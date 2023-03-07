@@ -5,7 +5,9 @@ account: tsigave
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8480053
-bundleId: 6917511
+bundleId: 6924051
 url: https://tsigave.shinyapps.io/project-201ab1/
-when: 1678014342.2777
-lastSyncTime: 1678014342.27771
+when: 1678158752.04659
+lastSyncTime: 1678158752.0466
+asMultiple: FALSE
+asStatic: FALSE
