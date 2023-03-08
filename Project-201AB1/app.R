@@ -46,7 +46,7 @@ ui <- fluidPage(
                and board rates charged for full-time students in degree-granting 
                postsecondary institutions, by control and level of institution 
                and state or jurisdiction."), 
-                 p("The dataset has ", nrow(data), "rows, and ", ncol(data), "columns."),
+                 p("The dataset has ", nrow(dataset), "rows, and ", ncol(dataset), "columns."),
                  img(alt = "Tuition Graphic", 
                      src = "https://th.bing.com/th/id/R.f44fde31f669039af688c9de699da2da?rik=dCncQPN0qfHJrg&riu=http%3a%2f%2f614now.com%2fwp-content%2fuploads%2f2017%2f05%2ftuition-cash.jpg&ehk=iqnn7hEBQM9bbxFDF0uGiSBxhBPXvWd4bPi9CYwHCiQ%3d&risl=&pid=ImgRaw&r=0"),
                  h3("Target Audience"), 
@@ -75,8 +75,8 @@ ui <- fluidPage(
                   <li>Do private universities cost more than public universities?</li>
                   <li>For both private and public universities, has the cost of college increased over time on average?</li>
                 </ul>"),
-                 p("1. On average,", strong("DC and Vermont"), "are the 2 most expensive states overall for college tuition.", strong("Wyoming, 
-               Idaho, and Utah"), "are consistently the top 3 cheapest states for college tuition."), 
+                 p("1. On average,", strong("Massachussetts and Vermont"), "are 2 of the most expensive states overall for college tuition.", strong("Wyoming, 
+               and Idaho"), "are consistently among the cheapest states for college tuition."), 
                  p("2. Yes, private universities", em("do"), "cost more than public univerisites consistently from 2013 to 2021."),
                  p("3. Yes, college tuition in the US", em("has"), "gotten more expensive from 2013 to 2021, with the most expensive
                state (DC) gaining almost $8000 in total value during that time period."),
@@ -161,7 +161,7 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     output$conclusion <- renderPlot({
-        dc_wy_df <- subset(dataset, State %in% c("District of Columbia", "Wyoming") & Year %in% c("2013", "2021"))
+        dc_wy_df <- subset(dataset, State %in% c("Vermont", "Wyoming") & Year %in% c("2013", "2021"))
         
         ggplot(dc_wy_df, aes(x = Year, y = Value, fill = State)) +
             geom_bar(stat = "identity", position = "dodge") +
