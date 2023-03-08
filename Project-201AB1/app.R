@@ -165,7 +165,7 @@ server <- function(input, output) {
         
         ggplot(dc_wy_df, aes(x = Year, y = Value, fill = State)) +
             geom_bar(stat = "identity", position = "dodge") +
-            labs(title = "College Tuition in DC and Wyoming in 2013 vs 2021",
+            labs(title = "College Tuition in Vermont and Wyoming in 2013 vs 2021",
                  x = "Year", y = "College Tuition", fill = "State") +
             scale_fill_manual(values = c("steelblue", "orange"))
     })
