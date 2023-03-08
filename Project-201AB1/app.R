@@ -78,11 +78,11 @@ ui <- fluidPage(
                  p("1. On average,", strong("Massachussetts and Vermont"), "are 2 of the most expensive states overall for college tuition.", strong("Wyoming, 
                and Idaho"), "are consistently among the cheapest states for college tuition."), 
                  p("2. Yes, private universities", em("do"), "cost more than public univerisites consistently from 2013 to 2021."),
-                 p("3. Yes, college tuition in the US", em("has"), "gotten more expensive from 2013 to 2021, with the most expensive
-               state (DC) gaining almost $8000 in total value during that time period."),
+                 p("3. Yes, college tuition in the US", em("has"), "gotten more expensive from 2013 to 2021, with some of the most expensive
+               state increasing thousands of dollars in total value during that time period."),
                  plotOutput("conclusion"), 
-                 p("Comparing both DC's and Wyoming's tuition in 2013 and 2021, we can see a clear increase in overall tuition costs. 
-               DC, being one of the most expensive states for tuition, has a much more pronouced increase, while Wyoming, one of the
+                 p("Comparing both Vermont's and Wyoming's tuition in 2013 and 2021, we can see a clear increase in overall tuition costs. 
+               Vermont, being one of the most expensive states for tuition, has a much more pronouced increase, while Wyoming, one of the
                cheapest states, has a much smaller increase, but the increase is still clear. This data shows how expensive going to college
                in the United States is, and for our audience of prospective college students, seeing which states cost what can make or break 
                decisions about what school they end up at."),
